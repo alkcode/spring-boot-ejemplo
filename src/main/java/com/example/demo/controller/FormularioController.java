@@ -10,6 +10,24 @@ public class FormularioController {
 		return "formulario";
 	}
 
+	@GetMapping("/perfil")
+	public String perfil() {
+		return "perfil";
+	}
+	@GetMapping("/opcion")
+	public String opcion() {
+		return "opcion";
+	}
+
+	@GetMapping("/acceso")
+	public String acceso() {
+		return "accesoPerfil";
+	}
+
+
+
+
+
 
     
 }
