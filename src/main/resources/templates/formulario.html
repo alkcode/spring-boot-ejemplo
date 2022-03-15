@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template-->
     <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
 
 </head>
 
@@ -32,7 +33,7 @@
     <div id="wrapper" class="text-dark">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav issste sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav issste-v sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </li>
-
+            
             <!-- Divider -->
             <hr class="sidebar-divider mt-5">
 
@@ -107,7 +108,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-dark bg-dark text-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand issste-v text-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -136,17 +137,17 @@
                                 <a class="dropdown-item" href="#">
 
                                     <i class="icon ion-md-person mr-2"></i>
-                                    Profile
+                                    Perfil
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <i class="icon ion-md-settings mr-2"></i>
-                                    Settings
+                                    Configuración
                                 </a>
                          
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="icon ion-md-arrow mr-2"></i>
-                                    Logout
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Salir
                                 </a>
                             </div>
                         </li>
@@ -160,7 +161,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 mt-3 text-center text-gray-800">Formulario</h1>
+                    <h1 class=" mb-4 mt-3 text-center black">Formulario</h1>
 
                     <!-- Formulario -->
                     <div class="container">
@@ -211,7 +212,9 @@
                                     </label>
                                 </div>
                             </div>
-                            <button type="submit" class="btn issste text-white">Sign in</button>
+
+                                <button type="submit" class="btn issste text-white">Enviar</button>                            
+                            
                         </form>
 
                     </div>
@@ -257,7 +260,7 @@
                 <div class="modal-body">Si selecciona Logout saldra del sistema</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-danger" th:href="@{/logout}">Logout</a>
+                    <a class="btn btn-danger" th:href="@{/logout}">Salir</a>
                 </div>
             </div>
         </div>
